@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\aniak\\Only Us Remain\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\janeartwork\\halloween free pack\\third-party notices.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\janeartwork\\halloween free pack\\third-party notices.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\ui\\scene_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\ui\\scene_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Third-Party Notices.txt",
+              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\JaneArtWork\\Halloween Free Pack\\Third-Party Notices.txt",
+              "RelativeDocumentMoniker": "Assets\\JaneArtWork\\Halloween Free Pack\\Third-Party Notices.txt",
+              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\JaneArtWork\\Halloween Free Pack\\Third-Party Notices.txt",
+              "RelativeToolTip": "Assets\\JaneArtWork\\Halloween Free Pack\\Third-Party Notices.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-04-18T09:56:03.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Scene_manager.cs",
+              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\UI\\Scene_manager.cs",
+              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\UI\\Scene_manager.cs",
+              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\UI\\Scene_manager.cs",
+              "RelativeToolTip": "Assets\\_1SCRIPTS\\UI\\Scene_manager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T08:18:06.882Z",
+              "EditorCaption": ""
             }
           ]
         }

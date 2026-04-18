@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Processors;
+
 #endif
+
+using UnityEngine.SceneManagement;
 
 namespace StarterAssets
 {
@@ -15,6 +19,7 @@ namespace StarterAssets
         public SanityBar sanityBar;
         public HealthBar healthBar;
         int awfulfloattoint = 0;
+		public bool isDead = false;
 
         [Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
@@ -124,7 +129,9 @@ namespace StarterAssets
             GroundedCheck();
             JumpAndGravity();
 			Move();
-		}
+			checkhealth();
+
+        }
 
 		private void LateUpdate()
 		{
@@ -160,6 +167,17 @@ namespace StarterAssets
 			}
 		}
 
+		private void checkhealth()
+		{
+			if (healthBar.healthSystem.getHealth() == 0)
+			{
+				isDead = true;
+
+                Time.timeScale = 1f;
+                SceneManager.LoadScene(2);
+            }
+     
+        }
 		private void Move()
 		{
 

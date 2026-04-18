@@ -77,7 +77,7 @@ Material:
     - _DECALEMISSIONONOFF: 1
     - _DECALSONOFF: 1
     - _DETAILTEXTUREONOFF: 1
-    - _DecalEmissionIntensity: 3.86
+    - _DecalEmissionIntensity: 10
     - _DecalsOnOff: 1
     - _DetailTextureONOFF: 1
     - _DetailTextureONOFF1: 1
@@ -87,7 +87,7 @@ Material:
     - _Float2: 0.3
     - _Float5: 0.5
     - _GRADIENTONOFF: 0
-    - _Gradient: 0.169
+    - _Gradient: 1
     - _Gradient1: 1.206
     - _GradientONOFF: 1
     - _GradientPower: 5.98
@@ -98,7 +98,7 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _SNOWONOFF: 0
-    - _Smoothness: 0
+    - _Smoothness: 1
     - _SnowAmount: 0.215
     - _SnowCoverage: 0.23
     - _SnowFade: 0.736

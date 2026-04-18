@@ -27,6 +27,8 @@ public class TorchLightDamage : MonoBehaviour
     private bool flashing = false;
     private bool lightOn = false;
 
+    private Coroutine drainCoroutine;
+
     private void OnEnable()
     {
         toggleLightAction.action.Enable();
@@ -47,18 +49,34 @@ public class TorchLightDamage : MonoBehaviour
 
     private void ToggleLight(InputAction.CallbackContext ctx)
     {
+        float battery = batteryBar.batterySystem.GetBatteryPercent();
+
+        // BLOKADA WŁĄCZANIA
+        if (!lightOn && battery <= 0.01f)
+            return;
+
         lightOn = !lightOn;
         torchLight.enabled = lightOn;
 
         if (lightOn)
         {
-            StartCoroutine(DrainBatteryOverTime());
+            if (drainCoroutine == null)
+                drainCoroutine = StartCoroutine(DrainBatteryOverTime());
+        }
+        else
+        {
+            if (drainCoroutine != null)
+            {
+                StopCoroutine(drainCoroutine);
+                drainCoroutine = null;
+            }
         }
     }
 
     private void Shoot(InputAction.CallbackContext ctx)
     {
-        if (!torchLight.enabled) return;
+        if (!lightOn) return;
+        if (batteryBar.batterySystem.GetBatteryPercent() <= 0.01f) return;
 
         // Zużycie baterii na strzał
         batteryBar.batterySystem.Damage(15);
@@ -98,19 +116,34 @@ public class TorchLightDamage : MonoBehaviour
 
     private IEnumerator DrainBatteryOverTime()
     {
-        while (lightOn && batteryBar.batterySystem.GetBatteryPercent() > 0)
+        while (lightOn)
         {
-            batteryBar.batterySystem.Damage((int)batteryDrainRate); // np. 1 punkt na sekundę
-            batteryBar.UpdateBatteryBar(batteryBar.batterySystem.GetBatteryPercent());
+            float battery = batteryBar.batterySystem.GetBatteryPercent();
+
+            if (battery <= 0.01f)
+            {
+                ForceTurnOff();
+                yield break;
+            }
+
+            batteryBar.batterySystem.Damage((int)batteryDrainRate);
+            batteryBar.UpdateBatteryBar(battery);
 
             yield return new WaitForSeconds(1f);
         }
 
-        // Wyłącz latarkę, jeśli bateria się skończy
-        if (batteryBar.batterySystem.GetBatteryPercent() <= 0)
+        drainCoroutine = null;
+    }
+
+    private void ForceTurnOff()
+    {
+        lightOn = false;
+        torchLight.enabled = false;
+
+        if (drainCoroutine != null)
         {
-            lightOn = false;
-            torchLight.enabled = false;
+            StopCoroutine(drainCoroutine);
+            drainCoroutine = null;
         }
     }
 }

@@ -21,8 +21,12 @@ public class EnemySpawner : MonoBehaviour
 
     private int lastMinuteSpawned = -1;
 
+    private float gameStartTime;
+
     void Start()
     {
+        gameStartTime = Time.time;
+
         if (player == null)
         {
             GameObject p = GameObject.FindGameObjectWithTag("PLAYER");
@@ -33,7 +37,7 @@ public class EnemySpawner : MonoBehaviour
 
     void Update()
     {
-        int minute = Mathf.FloorToInt(Time.time / 60f);
+        int minute = Mathf.FloorToInt((Time.time - gameStartTime) / 60f);
 
         if (minute > lastMinuteSpawned)
         {
