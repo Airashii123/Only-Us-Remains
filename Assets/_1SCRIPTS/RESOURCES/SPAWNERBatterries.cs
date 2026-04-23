@@ -16,6 +16,7 @@ public class SPAWNERbatterries : MonoBehaviour
     public int maxKitsOnMap = 10;
 
     private List<GameObject> spawnedKits = new List<GameObject>();
+    public Points point;
 
     void Start()
     {
@@ -41,8 +42,6 @@ public class SPAWNERbatterries : MonoBehaviour
 
     void SpawnKit()
     {
-        
-
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
 
         GameObject kitGO = Instantiate(batterryPrefab, spawnPoint.position, spawnPoint.rotation);
@@ -52,6 +51,17 @@ public class SPAWNERbatterries : MonoBehaviour
         if (batteryScript != null)
         {
             batteryScript.batteryBar = batteryBar;
+
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+            if (player != null)
+            {
+                batteryScript.points = player.GetComponent<Points>(); // ✔ TU KLUCZ
+            }
+            else
+            {
+                Debug.LogError("PLAYER not found!");
+            }
         }
 
         spawnedKits.Add(kitGO);

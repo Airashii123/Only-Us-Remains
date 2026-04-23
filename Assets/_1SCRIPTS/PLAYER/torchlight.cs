@@ -23,11 +23,25 @@ public class TorchLightDamage : MonoBehaviour
     [Header("Battery")]
     public BatteryBar batteryBar;
     [SerializeField] private float batteryDrainRate = 1f; // ile na sekundę
+    [SerializeField] private float batteryShootDrain = 10f;
 
     private bool flashing = false;
     private bool lightOn = false;
 
     private Coroutine drainCoroutine;
+
+    public Points points;
+
+    [SerializeField] private float emptyShot;
+    [SerializeField] private float Shot;
+
+    private void Start()
+    {
+        lightOn = true;
+
+        points = GameObject.FindGameObjectWithTag("Player")
+        .GetComponent<Points>();
+    }
 
     private void OnEnable()
     {
@@ -79,12 +93,14 @@ public class TorchLightDamage : MonoBehaviour
         if (batteryBar.batterySystem.GetBatteryPercent() <= 0.01f) return;
 
         // Zużycie baterii na strzał
-        batteryBar.batterySystem.Damage(15);
+        batteryBar.batterySystem.Damage((int) batteryShootDrain);
         batteryBar.UpdateBatteryBar(batteryBar.batterySystem.GetBatteryPercent());
 
         StartCoroutine(FlashRed());
 
         Collider[] enemies = Physics.OverlapSphere(transform.position, damageRange, enemyLayer);
+
+        bool hitSomething = false;
 
         foreach (Collider enemy in enemies)
         {
@@ -97,7 +113,23 @@ public class TorchLightDamage : MonoBehaviour
             if (angle <= torchLight.spotAngle / 2f)
             {
                 enemyScript.takedamage(1);
+                if(enemyScript.isboss)
+                {
+                    points.AddScore(Shot*2);
+                }
+                else
+                {
+                    points.AddScore(Shot);
+                }
+                hitSomething = true;
+
+                points.AddScore(Shot);
             }
+        }
+
+        if (!hitSomething)
+        {
+            points.AddScore(emptyShot);
         }
     }
 

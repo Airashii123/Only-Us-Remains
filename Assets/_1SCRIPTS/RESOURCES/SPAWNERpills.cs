@@ -16,7 +16,7 @@ public class SPAWNERpills : MonoBehaviour
     public int maxKitsOnMap = 10;
 
     private List<GameObject> spawnedKits = new List<GameObject>();
-
+    public Points point;
     void Start()
     {
         SpawnMissingKits();
@@ -41,8 +41,6 @@ public class SPAWNERpills : MonoBehaviour
 
     void SpawnKit()
     {
-        
-
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
 
         GameObject kitGO = Instantiate(pillsPrefab, spawnPoint.position, spawnPoint.rotation);
@@ -52,6 +50,17 @@ public class SPAWNERpills : MonoBehaviour
         if (PillsScript != null)
         {
             PillsScript.sanityBar = sanityBar;
+
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+            if (player != null)
+            {
+                PillsScript.points = player.GetComponent<Points>();
+            }
+            else
+            {
+                Debug.LogError("PLAYER not found!");
+            }
         }
 
         spawnedKits.Add(kitGO);

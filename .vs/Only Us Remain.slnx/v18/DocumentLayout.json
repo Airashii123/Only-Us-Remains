@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\aniak\\Only Us Remain\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\ui\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\ui\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\enemies\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\enemies\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\enemies\\boss_script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\enemies\\boss_script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\enemies\\simple3stateenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,26 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\player\\torchlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\player\\torchlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\ui\\scene_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\ui\\scene_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\starterassets\\firstpersoncontroller\\scripts\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\starterassets\\firstpersoncontroller\\scripts\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\ui\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\ui\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\starterassets\\firstpersoncontroller\\scripts\\interactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\starterassets\\firstpersoncontroller\\scripts\\interactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\player\\playerhand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\player\\playerhand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,114 +30,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\UI\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\UI\\GameManager.cs",
+              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\UI\\GameManager.cs",
+              "RelativeToolTip": "Assets\\_1SCRIPTS\\UI\\GameManager.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T14:28:43.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "torchlight.cs",
+              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\PLAYER\\torchlight.cs",
+              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\PLAYER\\torchlight.cs",
+              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\PLAYER\\torchlight.cs",
+              "RelativeToolTip": "Assets\\_1SCRIPTS\\PLAYER\\torchlight.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAYwGMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T14:11:52.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Spawner.cs",
+              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\ENEMIES\\Spawner.cs",
+              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\ENEMIES\\Spawner.cs",
+              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\ENEMIES\\Spawner.cs",
+              "RelativeToolTip": "Assets\\_1SCRIPTS\\ENEMIES\\Spawner.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwDcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T14:11:14.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BOSS_script.cs",
+              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\ENEMIES\\BOSS_script.cs",
+              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\ENEMIES\\BOSS_script.cs",
+              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\ENEMIES\\BOSS_script.cs",
+              "RelativeToolTip": "Assets\\_1SCRIPTS\\ENEMIES\\BOSS_script.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAnwHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T14:08:46.866Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Spawner.cs",
-              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\ENEMIES\\Spawner.cs",
-              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\ENEMIES\\Spawner.cs",
-              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\ENEMIES\\Spawner.cs",
-              "RelativeToolTip": "Assets\\_1SCRIPTS\\ENEMIES\\Spawner.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwD8AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T13:37:16.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "torchlight.cs",
-              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\PLAYER\\torchlight.cs",
-              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\PLAYER\\torchlight.cs",
-              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\PLAYER\\torchlight.cs",
-              "RelativeToolTip": "Assets\\_1SCRIPTS\\PLAYER\\torchlight.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T13:36:03.552Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Simple3StateEnemy.cs",
               "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\ENEMIES\\Simple3StateEnemy.cs",
               "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\ENEMIES\\Simple3StateEnemy.cs",
               "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\ENEMIES\\Simple3StateEnemy.cs",
               "RelativeToolTip": "Assets\\_1SCRIPTS\\ENEMIES\\Simple3StateEnemy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJcAAAAAAAAAAADwv6MAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T13:35:01.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Scene_manager.cs",
-              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\UI\\Scene_manager.cs",
-              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\UI\\Scene_manager.cs",
-              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\UI\\Scene_manager.cs",
-              "RelativeToolTip": "Assets\\_1SCRIPTS\\UI\\Scene_manager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T13:01:03.1Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\UI\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\UI\\GameManager.cs",
-              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\UI\\GameManager.cs",
-              "RelativeToolTip": "Assets\\_1SCRIPTS\\UI\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T12:59:54.197Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PlayerHand.cs",
-              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\PLAYER\\PlayerHand.cs",
-              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\PLAYER\\PlayerHand.cs",
-              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\PLAYER\\PlayerHand.cs",
-              "RelativeToolTip": "Assets\\_1SCRIPTS\\PLAYER\\PlayerHand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T11:51:14.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Interactor.cs",
-              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\StarterAssets\\FirstPersonController\\Scripts\\Interactor.cs",
-              "RelativeDocumentMoniker": "Assets\\StarterAssets\\FirstPersonController\\Scripts\\Interactor.cs",
-              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\StarterAssets\\FirstPersonController\\Scripts\\Interactor.cs",
-              "RelativeToolTip": "Assets\\StarterAssets\\FirstPersonController\\Scripts\\Interactor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T11:48:42.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FirstPersonController.cs",
-              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\StarterAssets\\FirstPersonController\\Scripts\\FirstPersonController.cs",
-              "RelativeDocumentMoniker": "Assets\\StarterAssets\\FirstPersonController\\Scripts\\FirstPersonController.cs",
-              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\StarterAssets\\FirstPersonController\\Scripts\\FirstPersonController.cs",
-              "RelativeToolTip": "Assets\\StarterAssets\\FirstPersonController\\Scripts\\FirstPersonController.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAIwK8AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T11:48:32.109Z",
+              "WhenOpened": "2026-04-21T14:08:26.114Z",
               "EditorCaption": ""
             }
           ]

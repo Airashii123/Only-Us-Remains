@@ -14,6 +14,7 @@ public class EnemySpawner : MonoBehaviour
 
     [Header("Wave Settings")]
     public int enemiesPerMinute = 3;
+    public int enemiesPerMinuteMore = 1;
 
     [Header("HP Scaling")]
     public int baseHP = 3;
@@ -50,7 +51,7 @@ public class EnemySpawner : MonoBehaviour
     {
         int hpForThisWave = baseHP + (minute * hpIncreasePerMinute);
 
-        for (int i = 0; i < enemiesPerMinute; i++)
+        for (int i = 0; i < enemiesPerMinute + enemiesPerMinuteMore*minute; i++)
         {
             SpawnEnemy(hpForThisWave);
         }

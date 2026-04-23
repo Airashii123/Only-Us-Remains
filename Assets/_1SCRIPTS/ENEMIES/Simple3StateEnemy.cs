@@ -11,6 +11,7 @@ public class Simple3StateEnemy : MonoBehaviour
     public LayerMask whatisground, whatisplayer;
 
     [SerializeField] public int ehealth;
+    [SerializeField] public bool isboss;
 
     // STATES
     public float sightrange, attackrange;
@@ -103,7 +104,6 @@ public class Simple3StateEnemy : MonoBehaviour
 
     private void Chasing()
     {
-        Debug.Log("Chasing");
 
         animator.SetBool("IsPatroling", false);
         animator.SetBool("IsChasing", true);
@@ -116,7 +116,6 @@ public class Simple3StateEnemy : MonoBehaviour
     { 
         if (alreadyattacked) return;
 
-        Debug.Log("Attacking");
 
         animator.SetBool("IsPatroling", false);
         animator.SetBool("IsChasing", false);
@@ -161,7 +160,7 @@ public class Simple3StateEnemy : MonoBehaviour
 
         if (ehealth <= 0)
         {
-            Destroy(gameObject);
+            destroyenemy();
             return;
         }
 
@@ -170,6 +169,10 @@ public class Simple3StateEnemy : MonoBehaviour
 
     private void destroyenemy()
     {
+        if (isboss)
+        {
+            GameManager.Instance.EnemyDefeated();
+        }
         Destroy(gameObject);
     }
 }

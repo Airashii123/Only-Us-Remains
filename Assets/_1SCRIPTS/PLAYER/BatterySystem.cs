@@ -5,6 +5,7 @@ public class BatterySystem
     private int battery;
     private int batteryMAX;
 
+
     public BatterySystem(int batteryMAX)
     {
         this.batteryMAX = batteryMAX;   

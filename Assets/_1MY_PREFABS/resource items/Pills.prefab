@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PillsCode
   sanityBar: {fileID: 0}
+  heal: 25
 --- !u!54 &3945229657307999622
 Rigidbody:
   m_ObjectHideFlags: 0

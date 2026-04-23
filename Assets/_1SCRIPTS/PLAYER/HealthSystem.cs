@@ -5,6 +5,7 @@ public class HealthSystem
     private int health;
     private int healthMAX;
 
+
     public HealthSystem(int healthMAX)
     {
         this.healthMAX = healthMAX;   

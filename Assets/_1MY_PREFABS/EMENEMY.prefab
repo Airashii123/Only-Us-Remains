@@ -159,7 +159,7 @@ MonoBehaviour:
   whatisplayer:
     serializedVersion: 2
     m_Bits: 8
-  ehealth: 3
+  ehealth: 1
   sightrange: 30
   attackrange: 3
   playerinsightrange: 0

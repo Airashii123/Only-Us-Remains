@@ -6,6 +6,9 @@ public class ItemDropSpot : MonoBehaviour, IInteractable
 
     private PickupItem storedItem;
 
+    public Points points;
+    [SerializeField] private float correctDropReward = 10f;
+
     public string GetInteractPrompt()
     {
         if (storedItem == null)
@@ -28,6 +31,11 @@ public class ItemDropSpot : MonoBehaviour, IInteractable
         item.transform.SetPositionAndRotation(placePoint.position, placePoint.rotation);
 
         item.LockInPlace();
+
+        if (points != null)
+        {
+            points.AddScore(correctDropReward);
+        }
 
         GameManager.Instance.CheckWinCondition();
     }

@@ -59,6 +59,7 @@
     <Compile Include="Assets\_1SCRIPTS\PLAYER\torchlight.cs" />
     <Compile Include="Assets\_1SCRIPTS\PLAYER\HealthSystem.cs" />
     <Compile Include="Assets\_1SCRIPTS\RESOURCES\BatteryCode.cs" />
+    <Compile Include="Assets\_1SCRIPTS\AI\Points.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -98,9 +99,11 @@
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\_1SCRIPTS\RESOURCES\ItemDropSpot.cs" />
+    <Compile Include="Assets\SiuniaevCharacters\02_Golem\Scripts\AnimationButton.cs" />
     <Compile Include="Assets\_1SCRIPTS\RESOURCES\PickupItem.cs" />
     <Compile Include="Assets\_1SCRIPTS\UI\GameManager.cs" />
     <Compile Include="Assets\_1SCRIPTS\QOL\RemoveUnderwaterTreesEditor.cs" />
+    <Compile Include="Assets\SiuniaevCharacters\02_Golem\Scripts\CharacterRotator.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />

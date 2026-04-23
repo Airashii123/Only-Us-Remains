@@ -16,7 +16,7 @@ public class FirstAidKitSpawner : MonoBehaviour
     public int maxKitsOnMap = 10;
 
     private List<GameObject> spawnedKits = new List<GameObject>();
-
+    public Points point;
     void Start()
     {
         SpawnMissingKits();
@@ -62,6 +62,17 @@ public class FirstAidKitSpawner : MonoBehaviour
         if (firstAidKitScript != null)
         {
             firstAidKitScript.healthBar = healthBar;
+
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+            if (player != null)
+            {
+                firstAidKitScript.points = player.GetComponent<Points>();
+            }
+            else
+            {
+                Debug.LogError("PLAYER not found!");
+            }
         }
         else
         {

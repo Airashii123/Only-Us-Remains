@@ -5,6 +5,7 @@ public class SanitySystem
     private int sanity;
     private int sanityMAX;
 
+
     public SanitySystem(int sanityMAX)
     {
         this.sanityMAX = sanityMAX;   

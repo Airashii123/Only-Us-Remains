@@ -3,6 +3,13 @@ using UnityEngine;
 public class PillsCode : MonoBehaviour, IInteractable
 {
     public SanityBar sanityBar;
+    [SerializeField] private int heal;
+
+    public Points points;
+
+    [SerializeField] private float wasteP = -2;
+    [SerializeField] private float bonusP = 3;
+    [SerializeField] private float wasteBorder = 0.75f;
 
     public string GetInteractPrompt()
     {
@@ -10,10 +17,20 @@ public class PillsCode : MonoBehaviour, IInteractable
     }
     public void Interact()
     {
-        sanityBar.sanitySystem.Heal(10);
-        sanityBar.UpdateSanityBar(
-            sanityBar.sanitySystem.GetSanityPercent()
-        );
+        float before = sanityBar.sanitySystem.GetSanityPercent();
+        sanityBar.sanitySystem.Heal(heal);
+        float after = sanityBar.sanitySystem.GetSanityPercent();
+        sanityBar.UpdateSanityBar(after);
+
+        if (before <= wasteBorder)
+        {
+            points.AddScore(bonusP);
+        }
+
+        if (after > wasteBorder)
+        {
+            points.AddScore(wasteP);
+        }
 
         Destroy(gameObject);
     }

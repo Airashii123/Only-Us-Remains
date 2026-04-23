@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BatteryCode
   batteryBar: {fileID: 0}
+  heal: 25
 --- !u!54 &-3941377259041421820
 Rigidbody:
   m_ObjectHideFlags: 0

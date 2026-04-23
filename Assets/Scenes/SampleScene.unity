@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0
+  m_AmbientIntensity: 3.28
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 6eecb3bb77b3f7a43a504fceda3b0b5f, type: 2}
@@ -164,7 +164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 497.5248
+      value: 525.23
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -172,7 +172,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 625.56464
+      value: 582.2
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -630,7 +630,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 597.8123
+      value: 515.81
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -720,7 +720,8 @@ MonoBehaviour:
   - {fileID: 238967754}
   - {fileID: 12291236}
   - {fileID: 196187262}
-  maxKitsOnMap: 5
+  maxKitsOnMap: 15
+  point: {fileID: 0}
 --- !u!4 &79789933
 Transform:
   m_ObjectHideFlags: 0
@@ -928,6 +929,9 @@ MonoBehaviour:
   - {fileID: 1872426446}
   - {fileID: 1870051255}
   - {fileID: 1039848088}
+  enemyPrefab: {fileID: 1604160397579053707, guid: 577ad1616eacff74b8010182ec0234e8, type: 3}
+  enemySpawnPoint: {fileID: 255597244}
+  enemySpawner: {fileID: 885658373}
 --- !u!4 &255597244
 Transform:
   m_ObjectHideFlags: 0
@@ -937,7 +941,7 @@ Transform:
   m_GameObject: {fileID: 255597242}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 581.09906, y: 382.5842, z: 240.151}
+  m_LocalPosition: {x: 520.27, y: 53.62, z: 579.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1159,7 +1163,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -98.47257, w: 0}
+  m_margin: {x: 0, y: 0, z: -918.57874, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1235,6 +1239,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemDropSpot
   placePoint: {fileID: 315443536}
+  points: {fileID: 1292720794}
+  correctDropReward: 10
 --- !u!4 &315443536
 Transform:
   m_ObjectHideFlags: 0
@@ -1860,7 +1866,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 411.1467
+      value: 519.25
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1868,7 +1874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 557.85156
+      value: 572.51
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2258,6 +2264,10 @@ MonoBehaviour:
     m_Bits: 256
   batteryBar: {fileID: 1292720788}
   batteryDrainRate: 1
+  batteryShootDrain: 10
+  points: {fileID: 0}
+  emptyShot: -5
+  Shot: 5
 --- !u!1 &784731278
 GameObject:
   m_ObjectHideFlags: 0
@@ -2317,15 +2327,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 629.2652
+      value: 534.7
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 55.521
+      value: 54.29
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 577.21124
+      value: 568.4
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2641,6 +2651,8 @@ MonoBehaviour:
   playerHealthBar: {fileID: 1292720781}
   spawnPoints:
   - {fileID: 885658374}
+  - {fileID: 956067117}
+  - {fileID: 393719612}
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -2648,6 +2660,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   enemiesPerMinute: 3
+  enemiesPerMinuteMore: 1
   baseHP: 3
   hpIncreasePerMinute: 1
 --- !u!4 &885658374
@@ -2721,7 +2734,7 @@ Transform:
   m_GameObject: {fileID: 956067116}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 505.92, y: 55.73, z: 576.04}
+  m_LocalPosition: {x: 513.84, y: 57.94, z: 575.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2741,15 +2754,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 371.74588
+      value: 521.48
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 52.933434
+      value: 55.09
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 404.6663
+      value: 593
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2882,6 +2895,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemDropSpot
   placePoint: {fileID: 1039393373}
+  points: {fileID: 1292720794}
+  correctDropReward: 10
 --- !u!4 &1039393373
 Transform:
   m_ObjectHideFlags: 0
@@ -2950,6 +2965,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemDropSpot
   placePoint: {fileID: 1039848089}
+  points: {fileID: 1292720794}
+  correctDropReward: 10
 --- !u!4 &1039848089
 Transform:
   m_ObjectHideFlags: 0
@@ -3328,6 +3345,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BatteryBar
   _batterybarSprite: {fileID: 1457881655}
   batteryMAX: 100
+--- !u!114 &1292720794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602950943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fa76f25ca4a08c44be6bd75b076beb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Points
+  pointertext: {fileID: 291556550}
+  score: 0
+  timePenalty: -0.1
 --- !u!1001 &1315904878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3727,6 +3759,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemDropSpot
   placePoint: {fileID: 1450632291}
+  points: {fileID: 1292720794}
+  correctDropReward: 10
 --- !u!4 &1450632291
 Transform:
   m_ObjectHideFlags: 0
@@ -4151,6 +4185,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7094977340588366727, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7400677500434752734, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
@@ -4185,6 +4223,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 453084650579209855, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1292720788}
+    - targetCorrespondingSourceObject: {fileID: 453084650579209855, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1292720794}
   m_SourcePrefab: {fileID: 100100000, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
 --- !u!1001 &1601292109
 PrefabInstance:
@@ -4200,15 +4241,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 469.1424
+      value: 510.2
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 54.55
+      value: 54.5
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 451.9636
+      value: 584
       objectReference: {fileID: 0}
     - target: {fileID: 3208602337292949451, guid: 860e0cb7f5ab294478ed965a55e97ac9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4290,7 +4331,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1689910435
 Transform:
   m_ObjectHideFlags: 0
@@ -4892,6 +4933,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemDropSpot
   placePoint: {fileID: 1870051256}
+  points: {fileID: 1292720794}
+  correctDropReward: 10
 --- !u!4 &1870051256
 Transform:
   m_ObjectHideFlags: 0
@@ -4960,6 +5003,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemDropSpot
   placePoint: {fileID: 1872426447}
+  points: {fileID: 1292720794}
+  correctDropReward: 10
 --- !u!4 &1872426447
 Transform:
   m_ObjectHideFlags: 0
@@ -5145,7 +5190,8 @@ MonoBehaviour:
   - {fileID: 238967754}
   - {fileID: 12291236}
   - {fileID: 196187262}
-  maxKitsOnMap: 5
+  maxKitsOnMap: 15
+  point: {fileID: 0}
 --- !u!4 &2053195749
 Transform:
   m_ObjectHideFlags: 0
@@ -5208,7 +5254,8 @@ MonoBehaviour:
   - {fileID: 238967754}
   - {fileID: 12291236}
   - {fileID: 196187262}
-  maxKitsOnMap: 5
+  maxKitsOnMap: 15
+  point: {fileID: 0}
 --- !u!4 &2058015421
 Transform:
   m_ObjectHideFlags: 0

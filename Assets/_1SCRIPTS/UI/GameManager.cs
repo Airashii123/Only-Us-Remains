@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,9 +10,44 @@ public class GameManager : MonoBehaviour
 
     private bool hasWon = false;
 
+    [Header("Enemy Spawn")]
+    public GameObject enemyPrefab;
+    public Transform enemySpawnPoint;
+
+    private bool enemySpawned = false;
+    public EnemySpawner enemySpawner;
+
     void Awake()
     {
         Instance = this;
+    }
+
+    void SpawnEnemy()
+    {
+        enemySpawned = true;
+
+        Debug.Log("ENEMY SPAWNED!");
+
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+
+        if (playerObj == null)
+        {
+            Debug.LogError("PLAYER NOT FOUND!");
+            return;
+        }
+
+        GameObject enemyObj = Instantiate(enemyPrefab, enemySpawnPoint.position, enemySpawnPoint.rotation);
+
+        Simple3StateEnemy enemyScript = enemyObj.GetComponent<Simple3StateEnemy>();
+
+        if (enemyScript == null)
+        {
+            Debug.LogError("Simple3StateEnemy missing on prefab!");
+            return;
+        }
+
+        enemyScript.player = playerObj.transform;
+        enemyScript.phealthBar = playerObj.GetComponent<HealthBar>();
     }
 
     public void CheckWinCondition()
@@ -24,6 +60,15 @@ public class GameManager : MonoBehaviour
                 return;
         }
 
+        enemySpawner.enabled = false; // zatrzymujesz fale
+        SpawnEnemy(); // albo boss
+    }
+
+    public void EnemyDefeated()
+    {
+        if (hasWon) return;
+
+        hasWon = true;
         WinGame();
     }
 
@@ -33,8 +78,13 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("WIN!");
 
-        SceneManager.LoadScene(3);
+        StartCoroutine(LoadWinScene());
+    }
 
-        Time.timeScale = 0f; // zatrzymanie gry
+    IEnumerator LoadWinScene()
+    {
+        Time.timeScale = 1f;
+        yield return new WaitForSeconds(0.2f);
+        SceneManager.LoadScene(3);
     }
 }
