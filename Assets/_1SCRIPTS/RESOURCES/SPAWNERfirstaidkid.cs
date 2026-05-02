@@ -16,7 +16,7 @@ public class FirstAidKitSpawner : MonoBehaviour
     public int maxKitsOnMap = 10;
 
     private List<GameObject> spawnedKits = new List<GameObject>();
-    public Points point;
+
     void Start()
     {
         SpawnMissingKits();

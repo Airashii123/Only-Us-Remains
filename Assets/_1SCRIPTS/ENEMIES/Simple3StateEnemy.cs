@@ -124,7 +124,7 @@ public class Simple3StateEnemy : MonoBehaviour
         agent.SetDestination(transform.position);
         transform.LookAt(player);
 
-        phealthBar.healthSystem.Damage(10);
+        phealthBar.healthSystem.Attacked(10);
         phealthBar.UpdateHealthBar(
             phealthBar.healthSystem.GetHealthPercent()
         );

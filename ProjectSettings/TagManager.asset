@@ -6,6 +6,14 @@ TagManager:
   tags:
   - CinemachineTarget
   - PLAYER
+  - RUNE
+  - FIRSTAID
+  - TABS
+  - ENEMY
+  - BOSS
+  - DROP_POINT
+  - BOT
+  - BATTERY
   layers:
   - Default
   - TransparentFX

@@ -31,4 +31,10 @@ public class Scene_manager : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(2);
     }
+
+    public void Train()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(4);
+    }
 }

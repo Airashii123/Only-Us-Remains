@@ -3,11 +3,7 @@ using UnityEngine;
 public class ItemDropSpot : MonoBehaviour, IInteractable
 {
     public Transform placePoint;
-
     private PickupItem storedItem;
-
-    public Points points;
-    [SerializeField] private float correctDropReward = 10f;
 
     public string GetInteractPrompt()
     {
@@ -21,23 +17,34 @@ public class ItemDropSpot : MonoBehaviour, IInteractable
     {
         if (storedItem != null) return;
 
-        var item = PlayerHand.Instance.GetItem();
-        if (item == null) return;
-
-        PlayerHand.Instance.Drop();
-
-        storedItem = item;
-
-        item.transform.SetPositionAndRotation(placePoint.position, placePoint.rotation);
-
-        item.LockInPlace();
-
-        if (points != null)
+        // PLAYER
+        if (PlayerHand.Instance != null && PlayerHand.Instance.HasItem())
         {
-            points.AddScore(correctDropReward);
+            var item = PlayerHand.Instance.GetItem();
+            PlayerHand.Instance.Drop();
+
+            storedItem = item;
+            item.transform.SetPositionAndRotation(placePoint.position, placePoint.rotation);
+            item.LockInPlace();
+
+            GameManager.Instance.CheckWinCondition();
+            return;
         }
 
-        GameManager.Instance.CheckWinCondition();
+        // BOT
+        BotHand botHand = FindObjectOfType<BotHand>();
+        if (botHand != null && botHand.HasItem())
+        {
+            var item = botHand.GetItem();
+            botHand.Drop();
+
+            storedItem = item;
+            item.transform.SetPositionAndRotation(placePoint.position, placePoint.rotation);
+            item.LockInPlace();
+
+            GameManager.Instance.CheckWinCondition();
+            return;
+        }
     }
 
     public bool IsOccupied()

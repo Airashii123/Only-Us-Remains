@@ -16,7 +16,6 @@ public class SPAWNERbatterries : MonoBehaviour
     public int maxKitsOnMap = 10;
 
     private List<GameObject> spawnedKits = new List<GameObject>();
-    public Points point;
 
     void Start()
     {
@@ -56,7 +55,7 @@ public class SPAWNERbatterries : MonoBehaviour
 
             if (player != null)
             {
-                batteryScript.points = player.GetComponent<Points>(); // ✔ TU KLUCZ
+                batteryScript.points = player.GetComponent<Points>();
             }
             else
             {

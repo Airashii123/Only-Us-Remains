@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3945229657307999622}
   m_Layer: 0
   m_Name: Pills
-  m_TagString: Untagged
+  m_TagString: TABS
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,6 +128,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PillsCode
   sanityBar: {fileID: 0}
   heal: 25
+  points: {fileID: 0}
+  wasteP: -2
+  bonusP: 3
+  wasteBorder: 0.75
 --- !u!54 &3945229657307999622
 Rigidbody:
   m_ObjectHideFlags: 0

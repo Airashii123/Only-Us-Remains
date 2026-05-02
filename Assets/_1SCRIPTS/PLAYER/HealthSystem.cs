@@ -5,37 +5,59 @@ public class HealthSystem
     private int health;
     private int healthMAX;
 
+    public Points points;
+    public float attackedPoints;
 
-    public HealthSystem(int healthMAX)
+    public HealthSystem(int healthMAX, Points points)
     {
-        this.healthMAX = healthMAX;   
-        this.health = healthMAX;    
+        this.healthMAX = healthMAX;
+        this.health = healthMAX;
+
+        this.points = points;
     }
 
     public int getHealth()
     {
-        return health;  
+        return health;
     }
 
     public void Damage(int damage)
     {
-        this.health -= damage;
-        if (this.health < 0)
+        health -= damage;
+
+        if (health < 0)
         {
-            this.health = 0;
+            health = 0;
         }
     }
+
+    public void Attacked(int damage)
+    {
+        health -= damage;
+
+        if (health < 0)
+        {
+            health = 0;
+        }
+
+        if (points != null)
+        {
+            points.AddScore(attackedPoints);
+        }
+    }
+
     public void Heal(int heal)
     {
-        this.health += heal;
-        if (this.health > this.healthMAX)
+        health += heal;
+
+        if (health > healthMAX)
         {
-            health = this.healthMAX;
+            health = healthMAX;
         }
     }
+
     public float GetHealthPercent()
     {
-        return (float)this.health / this.healthMAX;    
+        return (float)health / healthMAX;
     }
 }
-

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7652833202812732847}
   m_Layer: 8
   m_Name: EMENEMY
-  m_TagString: Untagged
+  m_TagString: ENEMY
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,14 +159,15 @@ MonoBehaviour:
   whatisplayer:
     serializedVersion: 2
     m_Bits: 8
-  ehealth: 1
+  ehealth: 3
+  isboss: 0
   sightrange: 30
   attackrange: 3
   playerinsightrange: 0
   playerinattackrange: 0
   walkPoint: {x: 0, y: 0, z: 0}
   walkpointrange: 20
-  timebeetweenattacks: 1
+  timebeetweenattacks: 3
   teleportRange: 20
   groundLayer:
     serializedVersion: 2

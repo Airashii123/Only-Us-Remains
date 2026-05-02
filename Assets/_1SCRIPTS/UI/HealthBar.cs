@@ -7,12 +7,17 @@ public class HealthBar : MonoBehaviour
 {
     public HealthSystem healthSystem;
 
+    [SerializeField] private float attackedPoints;
     [SerializeField] private Image _healthbarSprite;
     [SerializeField] private int healthMAX = 100;
 
+    [SerializeField] private Points points;
+
     private void Awake()
     {
-        healthSystem = new HealthSystem(healthMAX);
+        healthSystem = new HealthSystem(healthMAX, points);
+        healthSystem.attackedPoints = attackedPoints;
+
         UpdateHealthBar(1f);
     }
 

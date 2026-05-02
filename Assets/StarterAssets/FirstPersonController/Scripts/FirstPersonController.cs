@@ -76,9 +76,13 @@ namespace StarterAssets
 
 		//ANIMACJA DOPISAŁAM TO HELP
 		private Animator animator;
-	
+
+
+		[SerializeField] int sanitydrainwalk;
+        [SerializeField] int sanitydrainjump;
+
 #if ENABLE_INPUT_SYSTEM
-		private PlayerInput _playerInput;
+        private PlayerInput _playerInput;
 #endif
 		private CharacterController _controller;
 		private StarterAssetsInputs _input;
@@ -238,12 +242,12 @@ namespace StarterAssets
 				{
 					if (sanityBar.sanitySystem.getSanity() == 0)
 					{
-                        healthBar.healthSystem.Damage(2);
+                        healthBar.healthSystem.Damage(sanitydrainwalk);
                         healthBar.UpdateHealthBar(
                         healthBar.healthSystem.GetHealthPercent()
                     );
                     }
-                    sanityBar.sanitySystem.Damage(2);
+                    sanityBar.sanitySystem.Damage(sanitydrainwalk);
                     sanityBar.UpdateSanityBar(
                         sanityBar.sanitySystem.GetSanityPercent()
                     );
@@ -279,7 +283,14 @@ namespace StarterAssets
 					_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
 
                     // SANITY JUMP
-                    sanityBar.sanitySystem.Damage(1);
+                    if (sanityBar.sanitySystem.getSanity() == 0)
+                    {
+                        healthBar.healthSystem.Damage(sanitydrainjump);
+                        healthBar.UpdateHealthBar(
+                        healthBar.healthSystem.GetHealthPercent()
+                    );
+                    }
+                    sanityBar.sanitySystem.Damage(sanitydrainjump);
                     sanityBar.UpdateSanityBar(
                         sanityBar.sanitySystem.GetSanityPercent()
                     );

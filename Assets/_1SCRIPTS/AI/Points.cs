@@ -3,16 +3,19 @@ using UnityEngine;
 
 public class Points : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI pointertext;
+    [SerializeField] private TextMeshProUGUI pointertext;
 
-    public float score = 0;
-
+    public float score = 0f;
     public float timePenalty = -0.1f;
 
     void Update()
     {
         AddScore(timePenalty * Time.deltaTime);
-        pointertext.text = string.Format("Points: {00}",score);
+
+        if (pointertext != null)
+        {
+            pointertext.text = "Points: " + Mathf.RoundToInt(score);
+        }
     }
 
     public void AddScore(float value)
@@ -22,6 +25,6 @@ public class Points : MonoBehaviour
 
     public void ResetScore()
     {
-        score = 0;
+        score = 0f;
     }
 }
