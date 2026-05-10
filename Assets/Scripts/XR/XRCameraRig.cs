@@ -1,6 +1,7 @@
 using UnityEngine;
 #if UNITY_2020_1_OR_NEWER
 using UnityEngine.XR;
+using UnityEngine.XR.Management;
 #endif
 
 namespace OnlyUsRemains.XR
@@ -64,13 +65,12 @@ namespace OnlyUsRemains.XR
 #if UNITY_2020_1_OR_NEWER
             try
             {
-                // Start XR subsystems
-                var xrSettings = XRSettings.LoadedDeviceName;
+                // Check if XR is supported and active
+                xrActive = XRSettings.isDeviceActive;
                 
-                if (!string.IsNullOrEmpty(xrSettings) && xrSettings != "MockHMD")
+                if (xrActive)
                 {
-                    xrActive = true;
-                    Debug.Log($"XR Initialized: {xrSettings}");
+                    Debug.Log("XR is active and initialized");
 
                     if (xrOrigin != null)
                     {
@@ -79,8 +79,7 @@ namespace OnlyUsRemains.XR
                 }
                 else
                 {
-                    xrActive = false;
-                    Debug.Log("XR not available. Running in standard mode.");
+                    Debug.Log("XR not active. Running in standard mode.");
                     
                     if (xrOrigin != null)
                     {
@@ -90,7 +89,7 @@ namespace OnlyUsRemains.XR
             }
             catch (System.Exception e)
             {
-                Debug.LogWarning($"XR initialization failed: {e.Message}. Continuing in standard mode.");
+                Debug.LogWarning($"XR initialization check failed: {e.Message}. Continuing in standard mode.");
                 xrActive = false;
             }
 #else
