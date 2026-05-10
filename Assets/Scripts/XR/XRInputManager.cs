@@ -4,6 +4,8 @@ using UnityEngine.InputSystem.XR;
 #if UNITY_2020_1_OR_NEWER
 using UnityEngine.XR;
 #endif
+using System.Collections.Generic;
+using System.Linq;
 
 namespace OnlyUsRemains.XR
 {
@@ -62,8 +64,20 @@ namespace OnlyUsRemains.XR
         private void InitializeControllers()
         {
             // Try to find XR controller devices
-            var leftDevices = InputSystem.devices.FindAll(d => d is XRController && d.displayName.Contains("Left"));
-            var rightDevices = InputSystem.devices.FindAll(d => d is XRController && d.displayName.Contains("Right"));
+            var allDevices = InputSystem.devices;
+            var leftDevices = new List<InputDevice>();
+            var rightDevices = new List<InputDevice>();
+
+            foreach (var device in allDevices)
+            {
+                if (device is XRController xrController)
+                {
+                    if (device.displayName.Contains("Left"))
+                        leftDevices.Add(device);
+                    else if (device.displayName.Contains("Right"))
+                        rightDevices.Add(device);
+                }
+            }
 
             if (leftDevices.Count > 0)
             {
@@ -151,7 +165,14 @@ namespace OnlyUsRemains.XR
         public bool IsXRActive()
         {
 #if UNITY_2020_1_OR_NEWER
-            return XRSettings.isDeviceActive;
+            try
+            {
+                return XRSettings.isDeviceActive;
+            }
+            catch
+            {
+                return false;
+            }
 #else
             return false;
 #endif
