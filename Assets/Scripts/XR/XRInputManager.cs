@@ -1,11 +1,9 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.XR;
 #if UNITY_2020_1_OR_NEWER
 using UnityEngine.XR;
 #endif
 using System.Collections.Generic;
-using System.Linq;
 
 namespace OnlyUsRemains.XR
 {
@@ -25,9 +23,6 @@ namespace OnlyUsRemains.XR
         public bool MenuButtonPressed { get; private set; } = false;
         public bool PrimaryButtonPressed { get; private set; } = false;
         public bool SecondaryButtonPressed { get; private set; } = false;
-
-        private XRController leftController;
-        private XRController rightController;
 
         private float triggerDeadzone = 0.1f;
         private float gripDeadzone = 0.1f;
@@ -63,38 +58,8 @@ namespace OnlyUsRemains.XR
 
         private void InitializeControllers()
         {
-            // Try to find XR controller devices
-            var allDevices = InputSystem.devices;
-            var leftDevices = new List<InputDevice>();
-            var rightDevices = new List<InputDevice>();
-
-            foreach (var device in allDevices)
-            {
-                if (device is XRController xrController)
-                {
-                    if (device.displayName.Contains("Left"))
-                        leftDevices.Add(device);
-                    else if (device.displayName.Contains("Right"))
-                        rightDevices.Add(device);
-                }
-            }
-
-            if (leftDevices.Count > 0)
-            {
-                leftController = (XRController)leftDevices[0];
-                Debug.Log("Left XR Controller found: " + leftController.displayName);
-            }
-
-            if (rightDevices.Count > 0)
-            {
-                rightController = (XRController)rightDevices[0];
-                Debug.Log("Right XR Controller found: " + rightController.displayName);
-            }
-
-            if (leftController == null || rightController == null)
-            {
-                Debug.LogWarning("XR Controllers not fully detected. This is normal if running without a headset. Controllers will still work when connected.");
-            }
+            // Controllers will be found automatically through gamepad
+            Debug.Log("XR Input Manager initialized");
         }
 
         private void Update()
