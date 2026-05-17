@@ -14,6 +14,7 @@ TagManager:
   - DROP_POINT
   - BOT
   - BATTERY
+  - RUNE_PLACED
   layers:
   - Default
   - TransparentFX

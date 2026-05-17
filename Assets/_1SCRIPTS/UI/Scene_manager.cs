@@ -37,4 +37,10 @@ public class Scene_manager : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(4);
     }
+
+    public void VR()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(5);
+    }
 }

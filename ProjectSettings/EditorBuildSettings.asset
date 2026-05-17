@@ -20,7 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Train_scene.unity
     guid: 8d0286980c28019499232a7ac98316ce
+  - enabled: 1
+    path: Assets/Scenes/VR_mode.unity
+    guid: cbdf05f57321ebf449d1920f0502f061
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e586c47464baaa741ba613902b718481, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 7d86887a7d0c06641a0ba9df58b289be, type: 2}
   m_UseUCBPForAssetBundles: 0

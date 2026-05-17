@@ -85,7 +85,11 @@ public class BotSensor : MonoBehaviour
 
     public Transform GetNearestEnemy(Transform from) => GetNearest(enemies, from);
     public Transform GetNearestPickup(Transform from) => GetNearest(pickups, from);
-    public Transform GetNearestRune(Transform from) => GetNearest(runes, from);
+    public Transform GetNearestRune(Transform from)
+    {
+        runes.RemoveAll(r => r == null || !r.CompareTag("RUNE"));
+        return GetNearest(runes, from);
+    }
 
     public int GetEnemyCount() => enemies.RemoveAll(e => e == null) == 0 ? enemies.Count : enemies.Count;
     public int GetPickupCount() => pickups.RemoveAll(p => p == null) == 0 ? pickups.Count : pickups.Count;

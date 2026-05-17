@@ -69,6 +69,9 @@ public class SupportBotAgent : Agent
     public BotTorchLightDamage botTorch;
     public float pickupRange = 2f;
 
+    [Header("Animation")]
+    public Animator animator;
+
     public override void Initialize()
     {
         if (navAgent == null)
@@ -93,7 +96,17 @@ public class SupportBotAgent : Agent
 
         if (botTorch == null)
             botTorch = GetComponentInChildren<BotTorchLightDamage>();
+
+        if (animator == null)
+            animator = GetComponentInChildren<Animator>();
+
     }
+
+    private void Update()
+    {
+        UpdateAnimator();
+    }
+
 
     // ============================================================
     // OBSERVATIONS
@@ -240,6 +253,14 @@ public class SupportBotAgent : Agent
                 break;
 
             case 8:
+                if (botTorch != null && botFlashlightOn)
+                {
+                    botTorch.ToggleLight();
+                    botFlashlightOn = false;
+                }
+                break;
+
+            case 9:
                 {
                     if (botTorch == null)
                     {
@@ -299,25 +320,16 @@ public class SupportBotAgent : Agent
                     break;
                 }
 
-            case 9:
+            case 10:
                 ItemDropSpot freeSpot = GetNearestFreeDropSpot();
                 if (freeSpot != null)
                     MoveTo(freeSpot.transform.position);
                 break;
 
-            case 10:
+            case 11:
                 // Retreat
                 RetreatFrom(enemy);
                 break;
-
-            case 11:
-                if (botTorch != null && botFlashlightOn)
-                {
-                    botTorch.ToggleLight();
-                    botFlashlightOn = false;
-                }
-                break;
-
 
         }
 
@@ -372,6 +384,9 @@ public class SupportBotAgent : Agent
         if (botHand == null) return;
         if (!botHand.HasItem()) return;
 
+        PickupItem item = botHand.GetItem();
+        if (item == null) return;
+
         ItemDropSpot freeSpot = GetNearestFreeDropSpot();
         if (freeSpot == null) return;
 
@@ -380,6 +395,9 @@ public class SupportBotAgent : Agent
         if (dist <= dropInteractRange)
         {
             freeSpot.Interact();
+
+            item.gameObject.tag = "RUNE_PLACED";
+
             AddReward(1.0f);
         }
     }
@@ -638,4 +656,19 @@ public class SupportBotAgent : Agent
 
         d[0] = lastAction;
     }
+
+    // ============================================================
+    // ANIMATIONS
+    // ============================================================
+
+    private void UpdateAnimator()
+    {
+        if (animator == null || navAgent == null) return;
+
+        bool isMoving = navAgent.velocity.magnitude > 0.1f;
+
+        animator.SetBool("IsWalking", isMoving);
+        animator.SetBool("IsStanding", !isMoving);
+    }
+
 }

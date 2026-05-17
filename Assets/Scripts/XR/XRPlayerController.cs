@@ -34,15 +34,37 @@ namespace OnlyUsRemains.XR
                 {
                     Debug.Log("XR Player Controller initialized in XR mode");
                 }
+                else
+                {
+                    Debug.Log("XR not available - using standard mode");
+                    xrEnabled = false;
+                }
+            }
+            else
+            {
+                Debug.Log("XR Input Manager not found or disabled");
+                xrEnabled = false;
             }
         }
 
         private void Update()
         {
-            // Only process XR input if XR is enabled
+            // Safety check for playerInput
+            if (playerInput == null)
+            {
+                Debug.LogWarning("StarterAssetsInputs component not found!");
+                return;
+            }
+
+            // Only process XR input if XR is enabled AND available
             if (xrEnabled && xrInputManager != null)
             {
                 UpdateXRInput();
+            }
+            // Fall back to standard input if XR is not active
+            else
+            {
+                playerInput.look = Vector2.zero;
             }
         }
 
@@ -54,6 +76,9 @@ namespace OnlyUsRemains.XR
             // Left controller - Movement
             Vector2 xrMovement = xrInputManager.GetMovementInput();
             playerInput.move = xrMovement * xrMovementSensitivity;
+
+            // Right controller - Look (head tracking would go here)
+            playerInput.look = Vector2.zero;
 
             // Right controller - Interactions
             // Trigger = Shoot

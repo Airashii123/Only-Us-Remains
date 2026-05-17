@@ -729,7 +729,6 @@ MonoBehaviour:
   - {fileID: 12291236}
   - {fileID: 196187262}
   maxKitsOnMap: 15
-  point: {fileID: 0}
 --- !u!4 &79789933
 Transform:
   m_ObjectHideFlags: 0
@@ -1247,8 +1246,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemDropSpot
   placePoint: {fileID: 315443536}
-  points: {fileID: 1292720794}
-  correctDropReward: 10
 --- !u!4 &315443536
 Transform:
   m_ObjectHideFlags: 0
@@ -2915,8 +2912,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemDropSpot
   placePoint: {fileID: 1039393373}
-  points: {fileID: 1292720794}
-  correctDropReward: 10
 --- !u!4 &1039393373
 Transform:
   m_ObjectHideFlags: 0
@@ -2985,8 +2980,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemDropSpot
   placePoint: {fileID: 1039848089}
-  points: {fileID: 1292720794}
-  correctDropReward: 10
 --- !u!4 &1039848089
 Transform:
   m_ObjectHideFlags: 0
@@ -3335,8 +3328,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3581b03e3f094d488bed251083afcca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthBar
+  attackedPoints: 0
   _healthbarSprite: {fileID: 1150627364}
   healthMAX: 100
+  points: {fileID: 0}
 --- !u!114 &1292720782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3380,6 +3375,38 @@ MonoBehaviour:
   pointertext: {fileID: 291556550}
   score: 0
   timePenalty: -0.1
+--- !u!114 &1292720795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602950943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d8cd73534c196246bed01f0055d62b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimationController
+  animator: {fileID: 1848817080}
+  walkingBoolName: Iswalking
+--- !u!114 &1292720796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602950943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c797c8ec11809a4884bbf9025301f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSanityHealthSystem
+  sanityBar: {fileID: 1292720782}
+  healthBar: {fileID: 1292720781}
+  sanityDrainWalk: 1
+  sanityDrainJump: 5
+  walkDrainInterval: 0.5
+  deathSceneIndex: 2
 --- !u!1001 &1315904878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3779,8 +3806,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemDropSpot
   placePoint: {fileID: 1450632291}
-  points: {fileID: 1292720794}
-  correctDropReward: 10
 --- !u!4 &1450632291
 Transform:
   m_ObjectHideFlags: 0
@@ -4246,6 +4271,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 453084650579209855, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1292720794}
+    - targetCorrespondingSourceObject: {fileID: 453084650579209855, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1292720796}
+    - targetCorrespondingSourceObject: {fileID: 453084650579209855, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1292720795}
   m_SourcePrefab: {fileID: 100100000, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
 --- !u!1001 &1601292109
 PrefabInstance:
@@ -4957,8 +4988,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemDropSpot
   placePoint: {fileID: 1870051256}
-  points: {fileID: 1292720794}
-  correctDropReward: 10
 --- !u!4 &1870051256
 Transform:
   m_ObjectHideFlags: 0
@@ -5027,8 +5056,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemDropSpot
   placePoint: {fileID: 1872426447}
-  points: {fileID: 1292720794}
-  correctDropReward: 10
 --- !u!4 &1872426447
 Transform:
   m_ObjectHideFlags: 0
@@ -5215,7 +5242,6 @@ MonoBehaviour:
   - {fileID: 12291236}
   - {fileID: 196187262}
   maxKitsOnMap: 15
-  point: {fileID: 0}
 --- !u!4 &2053195749
 Transform:
   m_ObjectHideFlags: 0
@@ -5279,7 +5305,6 @@ MonoBehaviour:
   - {fileID: 12291236}
   - {fileID: 196187262}
   maxKitsOnMap: 15
-  point: {fileID: 0}
 --- !u!4 &2058015421
 Transform:
   m_ObjectHideFlags: 0

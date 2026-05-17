@@ -3,32 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\aniak\\Only Us Remain\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\scripts\\xr\\xrplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\xr\\xrplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\scripts\\xr\\xrcamerarig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\xr\\xrcamerarig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\scripts\\xr\\xrinputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\xr\\xrinputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\ai\\supportbotagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\ai\\supportbotagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\ai\\botstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\ai\\botstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\ai\\botsensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\ai\\botsensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\player\\batterysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\player\\batterysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\ui\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\ui\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\player\\healthsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\player\\healthsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\ai\\points.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\ai\\points.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,102 +26,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BotStats.cs",
-              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\AI\\BotStats.cs",
-              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\AI\\BotStats.cs",
-              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\AI\\BotStats.cs",
-              "RelativeToolTip": "Assets\\_1SCRIPTS\\AI\\BotStats.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwCUAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T13:41:35.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BatterySystem.cs",
-              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\PLAYER\\BatterySystem.cs",
-              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\PLAYER\\BatterySystem.cs",
-              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\PLAYER\\BatterySystem.cs",
-              "RelativeToolTip": "Assets\\_1SCRIPTS\\PLAYER\\BatterySystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T13:30:41.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SupportBotAgent.cs",
-              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\AI\\SupportBotAgent.cs",
-              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\AI\\SupportBotAgent.cs",
-              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\AI\\SupportBotAgent.cs",
-              "RelativeToolTip": "Assets\\_1SCRIPTS\\AI\\SupportBotAgent.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAA5wHcAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T13:19:22.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BotSensor.cs",
-              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\AI\\BotSensor.cs",
-              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\AI\\BotSensor.cs",
-              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\AI\\BotSensor.cs",
-              "RelativeToolTip": "Assets\\_1SCRIPTS\\AI\\BotSensor.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwDkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T13:13:15.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Points.cs",
-              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\AI\\Points.cs",
-              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\AI\\Points.cs",
-              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\AI\\Points.cs",
-              "RelativeToolTip": "Assets\\_1SCRIPTS\\AI\\Points.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T12:50:27.316Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HealthBar.cs",
-              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\UI\\HealthBar.cs",
-              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\UI\\HealthBar.cs",
-              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\UI\\HealthBar.cs",
-              "RelativeToolTip": "Assets\\_1SCRIPTS\\UI\\HealthBar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T12:40:08.899Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HealthSystem.cs",
-              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\PLAYER\\HealthSystem.cs",
-              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\PLAYER\\HealthSystem.cs",
-              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\PLAYER\\HealthSystem.cs",
-              "RelativeToolTip": "Assets\\_1SCRIPTS\\PLAYER\\HealthSystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "XRPlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\Scripts\\XR\\XRPlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\XR\\XRPlayerController.cs",
+              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\Scripts\\XR\\XRPlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\XR\\XRPlayerController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAlwDYAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T12:36:07.264Z",
+              "WhenOpened": "2026-05-11T20:50:31.368Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "XRInputManager.cs",
+              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\Scripts\\XR\\XRInputManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\XR\\XRInputManager.cs",
+              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\Scripts\\XR\\XRInputManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\XR\\XRInputManager.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAiwJIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T20:50:21.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "XRCameraRig.cs",
+              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\Scripts\\XR\\XRCameraRig.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\XR\\XRCameraRig.cs",
+              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\Scripts\\XR\\XRCameraRig.cs",
+              "RelativeToolTip": "Assets\\Scripts\\XR\\XRCameraRig.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAwHcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T20:50:06.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SupportBotAgent.cs",
+              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\AI\\SupportBotAgent.cs",
+              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\AI\\SupportBotAgent.cs",
+              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\AI\\SupportBotAgent.cs",
+              "RelativeToolTip": "Assets\\_1SCRIPTS\\AI\\SupportBotAgent.cs",
+              "ViewState": "AgIAAG8CAAAAAAAAAAAqwKACAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T13:57:38.79Z"
             }
           ]
         }
