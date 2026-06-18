@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
+using UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation;
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
@@ -20,6 +22,18 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
+
+        // Jeśli to NIE scena VR → usuń XR simulator
+        if (SceneManager.GetActiveScene().buildIndex != 5)
+        {
+            XRDeviceSimulator sim = FindObjectOfType<XRDeviceSimulator>();
+
+            if (sim != null)
+            {
+                Destroy(sim.gameObject);
+                Debug.Log("Destroyed XR Device Simulator");
+            }
+        }
     }
 
     void SpawnEnemy()

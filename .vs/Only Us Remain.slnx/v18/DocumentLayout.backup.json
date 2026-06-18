@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\aniak\\Only Us Remain\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\scripts\\xr\\xrinputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\xr\\xrinputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\starterassets\\firstpersoncontroller\\scripts\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\starterassets\\firstpersoncontroller\\scripts\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\player\\hpsanitydrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\player\\hpsanitydrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\scripts\\xr\\xrplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\xr\\xrplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +23,12 @@
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\xr\\xrcamerarig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\scripts\\xr\\xrinputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\xr\\xrinputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\ai\\supportbotagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\ai\\supportbotagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\aniak\\only us remain\\assets\\_1scripts\\player\\playeranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\_1scripts\\player\\playeranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,15 +38,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "HpSanityDrain.cs",
+              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\PLAYER\\HpSanityDrain.cs",
+              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\PLAYER\\HpSanityDrain.cs",
+              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\PLAYER\\HpSanityDrain.cs",
+              "RelativeToolTip": "Assets\\_1SCRIPTS\\PLAYER\\HpSanityDrain.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T10:48:24.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayerAnimator.cs",
+              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\PLAYER\\PlayerAnimator.cs",
+              "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\PLAYER\\PlayerAnimator.cs",
+              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\PLAYER\\PlayerAnimator.cs",
+              "RelativeToolTip": "Assets\\_1SCRIPTS\\PLAYER\\PlayerAnimator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T10:47:31.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FirstPersonController.cs",
+              "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\StarterAssets\\FirstPersonController\\Scripts\\FirstPersonController.cs",
+              "RelativeDocumentMoniker": "Assets\\StarterAssets\\FirstPersonController\\Scripts\\FirstPersonController.cs",
+              "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\StarterAssets\\FirstPersonController\\Scripts\\FirstPersonController.cs",
+              "RelativeToolTip": "Assets\\StarterAssets\\FirstPersonController\\Scripts\\FirstPersonController.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAYwOgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T10:45:13.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "XRPlayerController.cs",
               "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\Scripts\\XR\\XRPlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\XR\\XRPlayerController.cs",
@@ -42,25 +95,24 @@
               "RelativeToolTip": "Assets\\Scripts\\XR\\XRPlayerController.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAlwDYAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T20:50:31.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-11T20:50:31.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "XRInputManager.cs",
               "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\Scripts\\XR\\XRInputManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\XR\\XRInputManager.cs",
               "ToolTip": "C:\\Users\\aniak\\Only Us Remain\\Assets\\Scripts\\XR\\XRInputManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\XR\\XRInputManager.cs",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAiwJIAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAIEAAAAAAAAAAAA2wJIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-11T20:50:21.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "XRCameraRig.cs",
               "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\Scripts\\XR\\XRCameraRig.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\XR\\XRCameraRig.cs",
@@ -68,12 +120,11 @@
               "RelativeToolTip": "Assets\\Scripts\\XR\\XRCameraRig.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAAAwHcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T20:50:06.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-11T20:50:06.7Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "SupportBotAgent.cs",
               "DocumentMoniker": "C:\\Users\\aniak\\Only Us Remain\\Assets\\_1SCRIPTS\\AI\\SupportBotAgent.cs",
               "RelativeDocumentMoniker": "Assets\\_1SCRIPTS\\AI\\SupportBotAgent.cs",
